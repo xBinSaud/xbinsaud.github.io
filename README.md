@@ -1,2 +1,7 @@
 # xbinsaud.github.io
-Public pages for Waqtan (وقتان), including the privacy policy
+
+Public GitHub Pages site for Waqtan (وقتان).
+
+- Privacy policy (Arabic): https://xbinsaud.github.io/waqtan/privacy/
+- Privacy policy (English): https://xbinsaud.github.io/waqtan/privacy/en/
+- Support: https://xbinsaud.github.io/waqtan/support/
