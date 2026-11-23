@@ -91,7 +91,7 @@ footer {
     <p>Waqtan is an iPhone app for planning shifts, following your day with prayer times and alarms, and — if you create an account — sharing days off with accepted friends. This policy explains what data we collect and how we use it.</p>
 
     <h2>Your schedule on your device</h2>
-    <p>Your work schedule, tasks and day notes are stored on your device. We do not send shift times, shift names, work details, notes or tasks to our servers, except the rest windows described below if sharing is on.</p>
+    <p>Your work schedule, tasks and day notes are stored on your device. We do not send shift times, shift names, work details, notes or tasks to our servers, except the rest windows described below if sharing is on, and what the smart assistant sends if you choose to use it.</p>
 
     <h2>Your account</h2>
     <p>An account is optional and is used for the friends feature. If you create an account, we may collect your email address, the display name you choose, and your account identifier. You can sign in with Apple. You can delete your account from Settings → Manage account. Deleting your account removes your account, friend data and published rest times from our service, and leaves your schedule on the device.</p>
@@ -100,7 +100,12 @@ footer {
     <p>Waqtan uses your location only while you use the app, to calculate sunrise, sunset and prayer times where you are. If location is used, it is stored locally on your device (such as coordinates, city name and time zone) and is not sent to friends. Prayer times are estimates calculated on your device with the method you choose; they are not official mosque or authority timetables.</p>
 
     <h2>Microphone and voice assistant</h2>
-    <p>Waqtan listens only after you tap a microphone button (in the app, a widget or Control Center), to turn what you say into a task. The app turns your voice into text on your iPhone. Audio is not sent to Waqtan.</p>
+    <p>Waqtan listens only after you tap a microphone button (in the app, a widget or Control Center), to turn what you say into a task. Speech is turned into text by Apple’s speech recognition service: on your device when your language is supported there, otherwise through Apple’s servers. Audio is not sent to Waqtan or to the AI provider. If you use the smart assistant, the resulting text is handled as described in the next section.</p>
+
+    <h2>Smart assistant (Plus)</h2>
+    <p>The smart assistant is optional and sends nothing until you have explicitly agreed in the app, once, on this device. After you agree, with each request you choose to send, the app sends to our server (Supabase) your message text, the latest conversation turns, and the parts of your schedule needed to answer: shift names, kinds and times and your time zone, the titles, times and reminders of your tasks and notes, and your Someday items (title and amount). Our server then passes the request to a third-party AI provider, OpenRouter, which routes it to the model provider to process it and generate the reply. This processing may take place outside Saudi Arabia. Our request requires OpenRouter not to use a provider that collects your data.</p>
+    <p>This data is used only to answer your request, and we do not use it for advertising or tracking. We do not send your name, email, friends, location or voice. Our server does not store conversations; they stay on your device until you clear them. When a request fails, part of the error message may be logged. To confirm your subscription, the app sends the App Store’s signed purchase proof with each request; it contains no name or email. OpenRouter’s privacy policy: <a href="https://openrouter.ai/privacy" rel="noopener">openrouter.ai/privacy</a>.</p>
+    <p>You can withdraw your permission at any time in Settings → Your data and privacy → “Withdraw permission.” After that, the assistant sends nothing until you agree again.</p>
 
     <h2>Sharing days off with friends</h2>
     <p>If you create a Waqtan account and you accept a friend (or a friend accepts you), the app sends to our service on our servers (Supabase) the rest windows calculated from your schedule: only each window’s start and end time, for the next twelve weeks (84 days). We do not send shift times, shift names, work details, notes or tasks, and we do not send your geographic location to friends (location, if used, stays on your device to calculate prayer times). Someone who can see those rest windows may still infer your rest pattern over that range, not only the overlapping days shown on screen.</p>
