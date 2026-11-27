@@ -85,13 +85,13 @@ footer {
     </header>
 
     <h1>Waqtan Privacy Policy</h1>
-    <p class="meta">This policy is effective 23 November 2026. For questions or requests about your data: <a href="mailto:msmscod@gmail.com">msmscod@gmail.com</a></p>
+    <p class="meta">This policy is effective 27 November 2026. For questions or requests about your data: <a href="mailto:msmscod@gmail.com">msmscod@gmail.com</a></p>
 
     <h2>Who we are</h2>
     <p>Waqtan is an iPhone app for planning shifts, following your day with prayer times and alarms, and — if you create an account — sharing days off with accepted friends. This policy explains what data we collect and how we use it.</p>
 
     <h2>Your schedule on your device</h2>
-    <p>Your work schedule, tasks and day notes are stored on your device. We do not send shift times, shift names, work details, notes or tasks to our servers, except the rest windows described below if sharing is on, and what the smart assistant sends if you choose to use it.</p>
+    <p>Your work schedule, tasks and day notes are stored on your device. We do not send shift times, shift names, work details, notes or tasks to our servers, except the rest windows described below if sharing is on.</p>
 
     <h2>Your account</h2>
     <p>An account is optional and is used for the friends feature. If you create an account, we may collect your email address, the display name you choose, and your account identifier. You can sign in with Apple. You can delete your account from Settings → Manage account. Deleting your account removes your account, friend data and published rest times from our service, and leaves your schedule on the device.</p>
@@ -99,19 +99,17 @@ footer {
     <h2>Location and prayer times</h2>
     <p>Waqtan uses your location only while you use the app, to calculate sunrise, sunset and prayer times where you are. If location is used, it is stored locally on your device (such as coordinates, city name and time zone) and is not sent to friends. Prayer times are estimates calculated on your device with the method you choose; they are not official mosque or authority timetables.</p>
 
-    <h2>Microphone and voice assistant</h2>
-    <p>Waqtan listens only after you tap a microphone button (in the app, a widget or Control Center), to turn what you say into a task. Speech is turned into text by Apple’s speech recognition service: on your device when your language is supported there, otherwise through Apple’s servers. Audio is not sent to Waqtan or to the AI provider. If you use the smart assistant, the resulting text is handled as described in the next section.</p>
+    <h2>Microphone and voice-to-task</h2>
+    <p>Waqtan listens only after you tap a microphone button (in the app, a widget or Control Center), to turn what you say into a task that is saved on your device. Speech is turned into text by Apple’s speech recognition service: on your device when your language is supported there, otherwise through Apple’s servers. Audio is not sent to Waqtan.</p>
 
-    <h2>Smart assistant (Plus)</h2>
-    <p>The smart assistant is optional and sends nothing until you have explicitly agreed in the app, once, on this device. After you agree, with each request you choose to send, the app sends to our server (Supabase) your message text, the latest conversation turns, and the parts of your schedule needed to answer: shift names, kinds and times and your time zone, the titles, times and reminders of your tasks and notes, and your Someday items (title and amount). Our server then passes the request to a third-party AI provider, OpenRouter, which routes it to the model provider to process it and generate the reply. This processing may take place outside Saudi Arabia. Our request requires OpenRouter not to use a provider that collects your data.</p>
-    <p>This data is used only to answer your request, and we do not use it for advertising or tracking. We do not send your name, email, friends, location or voice. Our server does not store conversations; they stay on your device until you clear them. When a request fails, part of the error message may be logged. To confirm your subscription, the app sends the App Store’s signed purchase proof with each request; it contains no name or email. OpenRouter’s privacy policy: <a href="https://openrouter.ai/privacy" rel="noopener">openrouter.ai/privacy</a>.</p>
-    <p>You can withdraw your permission at any time in Settings → Your data and privacy → “Withdraw permission.” After that, the assistant sends nothing until you agree again.</p>
+    <h2>Smart assistant</h2>
+    <p>The smart assistant is not available in this version. It sends nothing to our servers or to any AI provider.</p>
 
     <h2>Sharing days off with friends</h2>
     <p>If you create a Waqtan account and you accept a friend (or a friend accepts you), the app sends to our service on our servers (Supabase) the rest windows calculated from your schedule: only each window’s start and end time, for the next twelve weeks (84 days). We do not send shift times, shift names, work details, notes or tasks, and we do not send your geographic location to friends (location, if used, stays on your device to calculate prayer times). Someone who can see those rest windows may still infer your rest pattern over that range, not only the overlapping days shown on screen.</p>
-    <p>Who can see this: people in an accepted friendship with you, where neither of you has blocked the other. We do not show it publicly, sell it, or use it for advertising or to track you across apps and websites.</p>
+    <p>Who can see this: people in an accepted friendship with you, where neither of you has blocked the other. We do not show it publicly, sell it, or use rest windows for advertising or to track you across apps and websites.</p>
     <p>When it is sent: sharing is <strong>on from the start</strong> unless you turn it off. Once a friendship is accepted, the app updates these windows automatically when you open it or change your schedule. We show a <strong>one-time notice</strong> when your first friend is accepted, and for people who already have friends, on the first launch after the update. The notice explains what friends can and cannot see, includes a <strong>“Turn off sharing”</strong> / <strong>«أوقف المشاركة»</strong> button, and shows the settings path: <strong>Settings → Manage account → “Friends can see my days off.”</strong> Dismissing the notice without turning sharing off leaves sharing on.</p>
-    <p>How long friends can see it: shared data stays available to friends only while sharing is on and the friendship is active. Windows are removed when you turn sharing off, when they are replaced by a newer snapshot, when the friendship is removed or blocked, or when you delete your account.</p>
+    <p>How long friends can see it: the last snapshot we sent stays available to friends for 30 days after that send, and only while sharing is on and the friendship is active. If you keep opening the app with sharing on, the snapshot is refreshed and the 30 days start again. If you stop opening the app, friends stop seeing it 30 days after the last successful send. Windows are also removed when you turn sharing off, when they are replaced by a newer snapshot, when the friendship is removed or blocked, or when you delete your account.</p>
     <p>How to turn it off: from the one-time notice, tap <strong>«أوقف المشاركة»</strong>, or at any time go to <strong>Settings → Manage account → “Friends can see my days off”</strong> (or Friends → Manage account). Stopping sharing needs a network connection and confirmation from the server. You can also remove or block a friend, or delete your account from the same screen.</p>
 
     <h2>Friends and profile photo</h2>
@@ -121,8 +119,22 @@ footer {
     <p>We use Supabase to host authentication, friends and rest-day sharing. When the app talks to the server, the provider may process technical information such as IP address and device or app type, which may indicate an approximate region. See the provider’s policy: <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>.</p>
     <p>We may keep limited records needed to operate the service and prevent abuse.</p>
 
+    <h2>Ads (free version only)</h2>
+    <p>The free version of Waqtan shows one banner ad at the bottom of the Calendar screen, served by Google through AdMob. Ads never appear on the Today, prayer times, alarms or settings screens, and none appear during the first three days after you install the app. Waqtan Plus subscribers, including people on the free trial, see no ads, and the ad service is never started for them.</p>
+    <p><strong>Non-personalised ads:</strong> we ask Google for non-personalised ads only. They are not based on your past behaviour or your activity in other apps or websites. We do not ask for iOS “tracking” permission, we do not access the advertising identifier (IDFA), and we do not send Google your name, email, schedule, tasks, friends or precise location.</p>
+    <p><strong>What Google may collect to show an ad:</strong> even non-personalised ads need some data for frequency capping, aggregated reporting and fraud prevention. Google’s software in the app may collect:</p>
+    <ul>
+      <li>a device- or app-scoped identifier;</li>
+      <li>approximate location derived from your IP address;</li>
+      <li>which ads you saw and how you interacted with them;</li>
+      <li>app performance data and crash logs.</li>
+    </ul>
+    <p>Google processes this data under its own policies, and it may be processed <strong>outside Saudi Arabia</strong>: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+    <p><strong>Ad content:</strong> we block categories such as gambling, alcohol and dating, plus further account-level category blocks, but Google does not guarantee that blocking catches every unsuitable ad. If you see an inappropriate ad, email <a href="mailto:msmscod@gmail.com">msmscod@gmail.com</a> and we will block it.</p>
+    <p><strong>Your choices:</strong> you can remove ads entirely by subscribing to Waqtan Plus. In the European Economic Area or the UK, Google shows you a consent form before any ad, and you can change your choice in Settings → “Ad privacy options”.</p>
+
     <h2>What we do not do</h2>
-    <p>We do not use your data for advertising, to track you across apps and websites, or sell it.</p>
+    <p>We do not sell your data or track you across apps and websites. Ads in the free version are non-personalised, and we do not send the advertising partner your name, email, schedule, tasks, friends or precise location (see Ads).</p>
 
     <h2>Alarms and notifications</h2>
     <p>If you turn on work or prayer alarms, they are scheduled on your device at the times you choose. This does not require sending your schedule to friends.</p>
@@ -134,7 +146,7 @@ footer {
     <p>If we update this policy, we will publish the revised version on this page with a new effective date.</p>
 
     <footer>
-      <p>Waqtan · Privacy Policy · Effective 23 November 2026</p>
+      <p>Waqtan · Privacy Policy · Effective 27 November 2026</p>
       <p><a href="/waqtan/privacy/" lang="ar" dir="rtl">العربية</a> · <a href="/waqtan/support/">Support</a></p>
     </footer>
   </div>
